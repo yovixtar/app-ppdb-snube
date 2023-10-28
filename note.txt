@@ -1,0 +1,2 @@
+Ubah nilai_skhun -> char 6
+Ubah nik -> unique key

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function copyDivToClipboard() {
+        var range = document.createRange();
+        range.selectNode(document.getElementById("formatjadwal"));
+        window.getSelection().removeAllRanges(); // clear current selection
+        window.getSelection().addRange(range); // to select text
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();// to deselect
+        }
+    </script>
+</head>
+<body>
+   <h2>Javascript clipboard example</h2>
+    	
+   <div id="formatjadwal">Senin &lt;br /&gt; Selasa</div>
+   <a onclick="copyDivToClipboard()" href="#">Klik ini</a>
+   <br/><br/>
+   <textarea></textarea>
+</body>
+</html>
